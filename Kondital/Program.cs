@@ -26,8 +26,3 @@ namespace Kondital
         }
     }
 }
-
-class KonditalNr2
-{
-
-}

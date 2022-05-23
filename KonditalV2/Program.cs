@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KonditalV2
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -17,5 +17,9 @@ namespace KonditalV2
             Console.Write("\nIndtast din vægt: ");
             double vægt = Convert.ToInt32(Console.ReadLine());
         }
+    }
+    class Kondital
+    {
+
     }
 }

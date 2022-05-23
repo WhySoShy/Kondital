@@ -19,10 +19,10 @@ namespace Kondital
             Console.WriteLine(Main(puls, maxpuls, vægt));
 
         }
-        static int Main(int puls, int maxpuls, int vægt)
+        static string Main(int puls, int maxpuls, int vægt)
         {
-            int kondital = maxpuls / puls * (int)15.3;
-            return kondital * vægt / 1000;
+            int kondital = maxpuls / puls * (int)15.3, maxilt = kondital * vægt / 1000;
+            return "Kondital: "+kondital+"\nMax iltoptagelse: "+maxilt+" liter";
         }
     }
 }

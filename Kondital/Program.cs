@@ -18,3 +18,8 @@ namespace Kondital
         }
     }
 }
+
+class Kondital
+{
+
+}

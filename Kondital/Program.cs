@@ -15,14 +15,14 @@ namespace Kondital
             Console.Write("\nIndtast din max puls: ");
             int maxpuls = Convert.ToInt32(Console.ReadLine());
             Console.Write("\nIndtast din vægt: ");
-            int vægt = Convert.ToInt32(Console.ReadLine());
+            double vægt = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Main(puls, maxpuls, vægt));
 
         }
-        static string Main(int puls, int maxpuls, int vægt)
+        static string Main(int puls, int maxpuls, double vægt)
         {
-            int kondital = maxpuls / puls * (int)15.3, maxilt = kondital * vægt / 1000;
-            return "Kondital: "+kondital+"\nMax iltoptagelse: "+maxilt+" liter";
+            double kondital = maxpuls / puls * 15.3, maxilt = kondital * vægt / 1000;
+            return "Kondital: "+Math.Round(kondital).ToString()+"\nMax iltoptagelse: "+Math.Round(maxilt).ToString()+" liter";
         }
     }
 }
